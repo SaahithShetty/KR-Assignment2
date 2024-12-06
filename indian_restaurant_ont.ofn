@@ -288,7 +288,6 @@ DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-o
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic>)
 
-EquivalentClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> ObjectIntersectionOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Beverages>))
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Beverages>)
 DisjointClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Non_alcoholic>)
 
@@ -683,7 +682,6 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "21"^^xsd:integer)
 DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasDietaryPreferences> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Vegan")
 DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Ramya Ragu")
-DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isVegetarian> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "true"^^xsd:boolean)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rasamalai> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rasamalai>)
 
