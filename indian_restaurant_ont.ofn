@@ -49,9 +49,11 @@ Declaration(ObjectProperty(<http://www.semanticweb.org/user/ontologies/2024/11/u
 Declaration(ObjectProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isIngredientOf>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isMenuOf>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge>))
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasDietaryPreferences>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName>))
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasWorkType>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isNonVegetarian>))
 Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isSpicy>))
@@ -224,9 +226,13 @@ ObjectPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled
 
 # Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge>)
 
-DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
 DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
-DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> xsd:int)
+DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer>)
+
+DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
+DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer> xsd:integer)
 
 # Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasDietaryPreferences> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasDietaryPreferences>)
 
@@ -235,15 +241,18 @@ DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-o
 
 # Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender>)
 
-DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
 DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
 DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender> xsd:string)
 
 # Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName>)
 
-DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
 DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
 DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer>)
+
+DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
+DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer> xsd:string)
 
 # Data Property: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasWorkType> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasWorkType>)
 
@@ -271,10 +280,6 @@ DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-o
 DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isVegetarian> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes>)
 DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isVegetarian> xsd:boolean)
 
-# Data Property: owl:topDataProperty (owl:topDataProperty)
-
-DataPropertyDomain(owl:topDataProperty <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
-
 
 
 ############################
@@ -301,6 +306,7 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer>)
 
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>)
 DisjointClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dessert> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dessert>)
@@ -318,9 +324,21 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Gravy> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#MainCourse>)
 
+# Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ingredients> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ingredients>)
+
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ingredients> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Menu>)
+
+# Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Location> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Location>)
+
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Location> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>)
+
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#MainCourse> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#MainCourse>)
 
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#MainCourse> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes>)
+
+# Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Menu> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Menu>)
+
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Menu> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>)
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NaanandRoti> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NaanandRoti>)
 
@@ -329,7 +347,6 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes>)
 
 EquivalentClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes> ObjectIntersectionOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes> ObjectSomeValuesFrom(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins>)))
-EquivalentClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes> ObjectSomeValuesFrom(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasDish> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes>))
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes>)
 DisjointClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#NonVegetarianDishes> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes>)
 
@@ -344,10 +361,7 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins>)
 
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ingredients>)
-
-# Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>)
-
-SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant> ObjectMinCardinality(1 <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasLocation> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>))
+DisjointClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes>)
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rice> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rice>)
 
@@ -372,6 +386,7 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>)
 
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Restaurant>)
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff> ObjectExactCardinality(1 <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasworkType> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff>))
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Starter> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Starter>)
@@ -380,7 +395,7 @@ SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes>)
 
-EquivalentClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes> ObjectIntersectionOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins>)) ObjectAllValuesFrom(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Vegetables>)))
+EquivalentClasses(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes> ObjectIntersectionOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins>))))
 SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#VeganDishes> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Dishes>)
 
 # Class: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Vegetables> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Vegetables>)
@@ -415,7 +430,10 @@ ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/unti
 
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasMenu> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Anjappar> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#AnjapparMenu>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Anjappar> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya>)
-ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Anjappar> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Swasti>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#AnjapparMenu> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#AnjapparMenu>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Menu> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#AnjapparMenu>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Bajji> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Bajji>)
 
@@ -661,10 +679,11 @@ ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/unti
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya>)
 
-DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAge> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "21"^^xsd:decimal)
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Customer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya>)
+DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasAgeForCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "21"^^xsd:integer)
 DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasDietaryPreferences> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Vegan")
-DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasGender> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Female")
-DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasName> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Ramya Ragu")
+DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#hasNameCustomer> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "Ramya Ragu")
+DataPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#isVegetarian> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ramya> "true"^^xsd:boolean)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rasamalai> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Rasamalai>)
 
@@ -683,6 +702,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Spinachrasamsoup> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#blackpepper>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Spinachrasamsoup> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#blacksalt>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Spinachrasamsoup> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#spinach>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Swasti> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Swasti>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Staff> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Swasti>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Tandooriroti> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Tandooriroti>)
 
@@ -726,6 +749,10 @@ ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/unti
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Condiments> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#asafetida>)
 
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#banana> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#banana>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#fruits> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#banana>)
+
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#basmatirice> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#basmatirice>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#rice> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#basmatirice>)
@@ -737,6 +764,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#beer> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#beer>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Alcoholic> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#beer>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#besanflour> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#besanflour>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#flour> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#besanflour>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#bhelpuri> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#bhelpuri>)
 
@@ -776,7 +807,7 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chicken> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chicken>)
 
-ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Ingredients> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chicken>)
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Proteins> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chicken>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chillipowder> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#chillipowder>)
 
@@ -801,6 +832,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#corianderleaves> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#corianderleaves>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Spices> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#corianderleaves>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cornflour> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cornflour>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#flour> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cornflour>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cumin> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cumin>)
 
@@ -833,6 +868,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#gobiparatha> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#blacksalt>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#gobiparatha> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#cauliflower>)
 
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#jackfruit> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#jackfruit>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#fruits> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#jackfruit>)
+
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Snacks> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra>)
@@ -840,6 +879,14 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#basmatirice>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#blackpepper>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-2#hasIngredient> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#khakra> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#blacksalt>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#lemon> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#lemon>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#fruits> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#lemon>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#maidaflour> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#maidaflour>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#flour> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#maidaflour>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#meat> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#meat>)
 
@@ -871,6 +918,10 @@ ObjectPropertyAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/unti
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Vegetables> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#onions>)
 
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#orange> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#orange>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#fruits> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#orange>)
+
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#peas> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#peas>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Vegetables> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#peas>)
@@ -882,6 +933,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#puri> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#puri>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Condiments> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#puri>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#riceflour> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#riceflour>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#flour> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#riceflour>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#ricepuffs> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#ricepuffs>)
 
@@ -906,6 +961,10 @@ ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-onto
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#vermiccili> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#vermiccili>)
 
 ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#Condiments> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#vermiccili>)
+
+# Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#wheatflour> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#wheatflour>)
+
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#flour> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#wheatflour>)
 
 # Individual: <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#wine> (<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-6#wine>)
 
